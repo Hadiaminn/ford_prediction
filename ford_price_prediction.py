@@ -27,7 +27,7 @@ st.write(df)
 
 loaded_model = pickle.load(open("ford_prediction_model.h5", "rb"))
 
-prediction = loaded_model.predict(X)
+prediction = loaded_model.predict(df)
 
 st.subheader('Prediction')
 st.write(prediction)
