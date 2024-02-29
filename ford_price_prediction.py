@@ -11,7 +11,7 @@ This app predicts the **Price** for type of advertising stratergy!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    year = st.sidebar.slider('Year', 1996.0, 2020.0, 1.0) #All Float
+    year = st.sidebar.slider('Year', 1996.0, 2020.0, 1000.0) #All Float
     engineSize = st.sidebar.slider('Engine Size', 0.0, 5.0, 1.0)
     mileage = st.sidebar.slider('Mileage', 1.0, 177644.0, 15.0)
     data = {'Year': year,
